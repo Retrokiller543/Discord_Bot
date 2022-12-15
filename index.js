@@ -7,9 +7,6 @@ bot.on('ready', () => { console.log('Ready!'); });
 
 const commandHandlerForCommandNames = {}
 commandHandlerForCommandNames['addPayment'] = (msg, args) => {
-    if (!msg.channel.guild) {
-        return msg.channel.createMessage('This command can only be used in a server');
-    }
     if (args.length < 2) {
         return msg.channel.createMessage('Not enough arguments');
     } else if(args.length >= 2) {
@@ -22,6 +19,9 @@ commandHandlerForCommandNames['addPayment'] = (msg, args) => {
 
 bot.on('messageCreate', async (msg) => {
     const content = msg.content;
+    if (!msg.channel.guild) {
+        return;
+    }
     if (!content.startsWith(process.env.PREFIX)) {
         return
     }
