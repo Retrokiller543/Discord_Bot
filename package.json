@@ -1,0 +1,33 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "My discord bot called Tosic.Bot to be used at the server Tosic.Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Retrokiller543/Tosic.Bot.git"
+  },
+  "keywords": [
+    "discord",
+    "dev",
+    "bot",
+    "Tosic.Bot"
+  ],
+  "author": "Retrokiller543",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Retrokiller543/Tosic.Bot/issues"
+  },
+  "homepage": "https://github.com/Retrokiller543/Tosic.Bot#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "eris": "^0.17.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
